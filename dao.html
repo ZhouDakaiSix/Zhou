@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #d {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* transform: translateX(-10%) */
+        }
+        
+        #a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%)
+        }
+        /* ----------------------------------------------- */
+        
+        .he {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            font-size: 22px;
+            color: #c0c0c0;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        
+        .he img {
+            margin: 0 20px;
+            width: 112px;
+            height: 42px;
+        }
+        
+        form {
+            width: 480px;
+            height: 350px;
+            margin: 100px auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            background: #eeeeee5b;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            height: 46px;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            font-size: 20px;
+            border: 1px solid #f9f5f7;
+            box-sizing: border-box;
+            text-align: center;
+            color: #858585
+        }
+        
+        #checkboxX {
+            appearance: none;
+            /* 隐藏默认样式 */
+            width: 20px;
+            /* 定义勾选框大小 */
+            height: 20px;
+            border-radius: 50%;
+            /* 将勾选框改为圆形 */
+            border: 1px solid #ccc;
+            /* 添加边框 */
+            outline: none;
+            transform: translateY(4px);
+            /* 取消聚焦时的外边缘 */
+            margin-right: 20px;
+            border-right: 50%
+        }
+        
+        #checkboxX:checked {
+            background-color: #3d3c44;
+            /* 被勾选时的颜色 */
+        }
+        
+        input[type="submit"] {
+            background-color: #3d3c44;
+            width: 100%;
+            height: 46px;
+            color: #eddcb4;
+            padding: 10px 20px;
+            border: none;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d">
+        <video id="v" src="./bgm_mp4/横版-原神-昼.mp4" autoplay loop muted></video>
+        <div id="a">
+            <form action="./index.html" method="post">
+                <h1 class="he"><img src="./image/index/footer/mihayo.png" alt="">|<img src="./image/index/footer/ys.png" style="width: 110px;height: 80px;" alt=""></h1>
+                <input type="text" id="username" name="username" value="ZhouDakai" placeholder="输入手机号注册/登录" required>
+                <input type="password" id="password" name="password" value="520" placeholder="密码" required>
+                <p><input style="line-height:24px" type="checkbox" id="checkboxX">已同意《用户协议》和《隐私政策》</p>
+
+                <input type="submit" value="登录">
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

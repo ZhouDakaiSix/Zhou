@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新闻子页</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/ziye.css">
+</head>
+
+<body>
+    <!-- ------------------导航---------------- -->
+    <div class="tou-bg ">
+        <nav class="navbar navbar-expand-lg navbar-light  " style="padding:0 10px 0 50px">
+            <a class="navbar-brand" href="#"><i class="mx-1" style="line-height: 66px"><img src="./image/index/tou-bgm.png"
+                    alt="" style="width: 30px;height: 30px;"></i> <img src="./image/index/logo.png"  alt="">
+                </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="justify-content:space-between">
+                <div class="navbar-nav" style="position: relative">
+                    <a id="q" class="nav-link px-4" href="./index.html" style="font-size: 20px;letter-spacing:5px">首页 <span class="sr-only">(current)</span></a>
+                    <a id="q" class="nav-link px-4" href="#" style="font-size: 20px;letter-spacing:5px">新闻</a>
+                    <a id="q" class="nav-link px-4" href="#" style="font-size: 20px;letter-spacing:5px">角色</a>
+                    <a id="q" class="nav-link px-4" href="#" style="font-size: 20px;letter-spacing:5px">世界</a>
+                    <a id="q" class="nav-link px-4" href="#" style="font-size: 20px;letter-spacing:5px">漫画</a>
+                    <a id="q" class="nav-link px-4" href="#" style="font-size: 20px;letter-spacing:5px">社区</a>
+                    <a id="q" class="nav-link px-4" href="#" style="font-size: 20px;letter-spacing:5px">赛事</a>
+                    <span id="cloud-ziye" class=" xp"></span>
+                </div>
+                <div class="navbar-nav float-right xp">
+                    <a id="q" class="nav-link px-3" style="font-size: 20px;line-height: 49px">成长关爱系统 <i><img src="./image/index/tou-aixin.png" alt=""></i></a>
+                    <a id="q" class="nav-link px-3" style="font-size: 20px;line-height: 49px" type="button" data-toggle="modal" data-target="#exampleModal">登录 <i><img src="./image/index/tou-ren.png" alt=""></i></a></div>
+            </div>
+
+        </nav>
+
+    </div>
+    <!-- 模态框 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">登录</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <!-- <label for="exampleInputEmail1">Email address</label> -->
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="手机/用户名/邮箱">
+                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="exampleInputPassword1">Password</label> -->
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码">
+                        </div>
+                        <hr>
+                        <div class="form-group form-check">
+                            <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">下次自动登录</label> -->
+                            <button class="btn btn-secondary float-right" type="button">登录</button>
+                        </div>
+                        <!--  <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-dark ">Send message</button>
+                                            </div> -->
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- -------------------banner1----------------- -->
+    <div id="banner1">
+        <div class="container" id="c">
+            <div class="row" id="wsx">
+                <div class="col-lg-4" id="b1">
+                    <div class="card " id="c1" style="width: 420px; height: 450px;">
+                        <div class="aaa"><img src="./image/新闻/1.jpg" class="card-img-top" alt="..."></div>
+                        <div class="card-body" style="padding: 0;padding-top:20px;">
+                            <!-- 《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！ -->
+                            <h3 class="card-title ">《原神》[神铸赋形]活动祈愿现已开启: [单手剑·裁叶...</h3>
+                            <div class="ppp1">
+                                <span class="text-white-50">2023/05/22</span>
+                                <span class="text-warning float-right">新闻</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" id="b1">
+                    <div class="card" id="c1" style="width: 420px; height: 450px;">
+                        <div class="aaa"><img src="./image/新闻/2.jpg" class="card-img-top" alt="..."></div>
+                        <div class="card-body" style="padding: 0;padding-top:20px;">
+                            <h3 class="card-title ">《原神》 [叶落风随]祈愿活动祈愿 现已开启</h3>
+                            <div class="ppp1">
+                                <span class="text-white-50">2023/05/22</span>
+                                <span class="text-warning float-right">新闻</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" id="b1">
+                    <div class="card" id="c1" style="width: 420px; height: 450px;">
+                        <div class="aaa"><img src="./image/新闻/3.jpg" class="card-img-top" alt="..."></div>
+                        <div class="card-body" style="padding: 0;padding-top:20px;">
+                            <h3 class="card-title ">《原神》 [敕诫枢谋]祈愿活动祈愿 现已开启</h3>
+                            <div class="ppp1">
+                                <span class="text-white-50">2023/05/22</span>
+                                <span class="text-warning float-right">新闻</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-home-tab" data-toggle="pill" data-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+</div> -->
+    <!-- -------------------banner2----------------- -->
+    <div class="banner22">
+        <div class="container">
+            <ul class="nav mb-3 banner22-ul xp" id="pills-tab" role="tablist" style="margin: 38px 0; ">
+                <li class="nav-item active" role="presentation">
+                    <a class="nav-link but1" id="pills-home-tab" data-toggle="pill" data-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">最新</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">新闻</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">公告</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-contact-a" data-toggle="pill" data-target="#pills-a" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">活动</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent" style="width: 100%;">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/1.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/2.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/3.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/4.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/5.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/1.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/2.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/3.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/4.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/5.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/1.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/2.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/3.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/4.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/5.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-a" role="tabpanel" aria-labelledby="pills-contact-a">
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/1.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/2.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/3.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/4.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group xz" style="margin:10px">
+                        <a href="#" class="list-group-item list-group-item-action row" id="lkj">
+                            <div class="col-lg-3" style="width: 256px;height: 154px;padding: 0"><img src="./image/新闻/5.jpg" alt="" style="width: 100%;height: 100%;">
+                            </div>
+                            <div class="col-lg-9" style="position: relative;">
+                                <h3>《原神》「神铸赋形」活动祈愿现已开启：「单手剑·裁叶萃光」「单手剑·苍古自由之誓」概率UP！</h3>
+                                <div style="display: flex;position: absolute;bottom: 0;right: 0;">
+                                    <div style="margin-right: 30px;color:#999">2023/06/13</div>
+                                    <div class="text-warning">新闻</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="banner22-22">
+                <button class="btn5">加载更多</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- -------------------footer----------------- -->
+    <footer>
+        <div class="footer1">
+            <div class="f1">
+                <a href="#"><img src="./image/index/分享/1.png" style="width: 32px;height:32px" alt=""></a>
+                <a href="#"><img src="./image/index/分享/2.png" style="width: 32px;height:32px" alt=""></a>
+                <a href="#"><img src="./image/index/分享/3.png" style="width: 32px;height:32px" alt=""></a>
+                <a href="#"><img src="./image/index/分享/4.png" style="width: 32px;height:32px" alt=""></a>
+            </div>
+
+        </div>
+        <div class="footer2">
+            <div class="container">
+                <div class="row" style="align-items: center">
+                    <div class="col-lg-3 xp">
+                        <div class="row">
+                            <div class=" col-lg-12">
+                                <img src="./image/index/footer/mihayo.png" alt="" style="width: 112px;height: 42px;"> |<img src="./image/index/footer/ys.png" alt="" style="width: 110px;height: 80px;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 text-white-50">
+                        <p class="text-light">用户协议| 隐私政策| 儿童隐私政策| 自律公约| 成长关爱| 关于我们| 联系我们| 加入我们</p>
+
+                        <p> 健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。 </p>
+                        <p>沪公网安备xxxxxxxx号 | 增值电信业务经营许可证：沪xx-xxxxxxxx 沪ICP备xxxxxxxx号-x | 沪网文〔xxxx〕xxxx-xx号 | 国新出审【xxxx】xxxx号 互联网违法不良信息举报邮箱: xxxxxxxxxxxx 互联网违法不良信息举报电话: xxxxxx （工作时间：每天10点 - 20点） 亲爱的市民朋友，上海警方反诈劝阻电话“xxxx”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听 未成年成长关爱热线：xxxxxxxxxx
+                            （服务时间：8:00-23:00） © xxxx 米哈游版权所有 | 上海米哈游影铁科技有限公司 客服电话：xxx-xxx-xxxx</p>
+                        <hr>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <p class="text-light zzz">大二下学期 应用212 周大开 响应式期末作品</p>
+
+    </footer>
+</body>
+<script src="./bootstrap/js/jquery.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="./bootstrap/js/ziye.js"></script>
+
+</html>
