@@ -1,0 +1,751 @@
+    /* ----------------------导航--------------------- */
+    
+    .zzz {
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        position: fixed;
+        bottom: 0px;
+        text-align: center;
+        background: #0000009f;
+        z-index: 100;
+        transition: all 0.5s;
+        overflow: hidden;
+        margin: 0
+    }
+    
+    .zzz a:hover {
+        text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    }
+    
+    .zzz a {
+        margin: 0 20px;
+        color: rgb(253, 253, 253);
+        text-decoration: none;
+    }
+    
+    .aa3 {
+        margin: 0 100px 0 0
+    }
+    
+    .tou-bg {
+        position: fixed;
+        top: 0px;
+        width: 100vw;
+        background: #0000009f;
+        z-index: 100;
+        transition: all 0.5s
+    }
+    
+    .tou-bg .nav-link:hover {
+        color: #ffffff;
+        position: relative;
+        text-shadow: 0 0 10px #ffffff;
+        font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+        font-size: 20px;
+    }
+    
+    .jiantou {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .jiant {
+        /* 应用的动画名 */
+        animation-name: jiantou-in;
+        /* 过程时间 */
+        animation-duration: 1.5s;
+        /* 可以在动画播放过程中实现先加速再减速的效果 */
+        animation-timing-function: ease-in-out;
+        /* 延迟0.5s */
+        /* animation-delay: 0.5s; */
+        /* 可以使动画在播放之前和之后保持其效果 */
+        animation-fill-mode: both;
+        /* 循环播放 */
+        animation-iteration-count: infinite;
+    }
+    
+    .jiant2 {
+        animation-name: jiantou-in;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+    }
+    
+    .jiant3 {
+        animation-name: jiantou-in;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes jiantou-in {
+        0% {
+            opacity: 0.1;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0.1;
+        }
+    }
+    /* 导条的字 */
+    
+    #q {
+        color: #cccccc
+    }
+    
+    #q:hover {
+        text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+        color: rgb(255, 255, 255);
+    }
+    /* 滑块 */
+    
+    #cloud {
+        position: absolute;
+        left: 0px;
+        top: -17px;
+        background: #00e1ff;
+        width: 98px;
+        height: 5px;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .xp {
+            display: none;
+        }
+    }
+    /* --------------------banner---------------------- */
+    
+    .banner-bg {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        /* background: url('../image/index/banner.jpg') no-repeat; */
+        /* background-size: 100vw 100vh */
+    }
+    /* //动态背景 */
+    
+    #v {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    
+    .qiqiqi {
+        position: absolute;
+        top: 110px;
+        right: -30px;
+    }
+    
+    .bofang {
+        position: absolute;
+        bottom: -65vh;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: rgb(248, 248, 248);
+        transition: all 0.6s;
+    }
+    
+    .bofang:hover {
+        background: rgba(255, 255, 255, 0);
+    }
+    
+    .bofang::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 28px;
+        height: 28px;
+        transform: translate(-50%, -50%);
+        background: url('../image/index/banner2/bofang.png') no-repeat;
+        background-position: center top;
+    }
+    
+    .bofang:hover::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 28px;
+        height: 28px;
+        transform: translate(-50%, -50%);
+        background: url('../image/index/banner2/bofang.png') no-repeat;
+        background-position: center bottom;
+    }
+    
+    .shier {
+        position: absolute;
+        top: 75vh;
+        left: -30px;
+    }
+    
+    .liu {
+        position: absolute;
+        top: 75vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .liu-1 {
+        display: flex;
+    }
+    
+    .liu-1>div {
+        margin: 0 10px
+    }
+    
+    .liu-si {
+        height: 102px;
+    }
+    /* --------banner2-------- */
+    
+    .banner2 {
+        position: relative;
+        width: 100%;
+        height: 700px;
+        background: url('../image/index/酒馆.jpg') no-repeat;
+        background-size: 100vw 700px
+    }
+    
+    .banner-6-bg {
+        background: #18181880
+    }
+    /* 导航的按钮button */
+    
+    #w {
+        border: 0;
+        border-bottom: 3px solid #ffd49f00;
+        color: #ffffff
+    }
+    
+    #w:hover {
+        color: #ffd49f;
+        border-bottom: 3px solid #ffd49f
+    }
+    /* 列表的线 */
+    
+    #e {
+        border-bottom: 1px solid #adadad48
+    }
+    
+    #r:hover {
+        text-decoration: none;
+        background: #adadad1a
+    }
+    /* ------------banner3------------ */
+    
+    #banner3 {
+        width: 100%;
+        height: 1270px;
+        overflow: hidden;
+        text-align: center;
+        line-height: 260px;
+        color: #ffffff;
+        font-size: 40px;
+        font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+    }
+    /* ---1---- */
+    
+    #b3 {
+        width: 100%;
+        height: 260px;
+        position: relative;
+    }
+    
+    #b3 li {
+        border: 0
+    }
+    
+    #b3-1 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 260px;
+        background: url('../image/index/banner2/蒙德.jpg') no-repeat;
+        background-size: 100% 260px;
+        filter: brightness(50%);
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+    
+    #b3:hover #b3-1 {
+        border: 5px solid #ffffff;
+        filter: brightness(100%);
+        background-size: 105% 105%;
+        background-position: center center;
+    }
+    
+    #b3-1-1 {
+        opacity: 0;
+        transition: all 0.5s;
+        background-size: 95% 95%;
+        background-position: -15vw -0vh;
+    }
+    
+    @keyframes b3-in {
+        0% {
+            background: url('../image/md/1.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: -20vw -10vh;
+        }
+        25% {
+            background: url('../image/md/4.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: -15vw -10vh;
+        }
+        50% {
+            background: url('../image/md/3.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: -10vw -10vh;
+        }
+        75% {
+            background: url('../image/index/banner2/克力.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: -5vw -10vh;
+        }
+        100% {
+            background: url('../image/md/2.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: 0vw -10vh;
+        }
+    }
+    
+    #b3:hover #b3-1-1 {
+        position: absolute;
+        width: 100%;
+        height: 260px;
+        top: 0;
+        left: 25vw;
+        /*  background: url('../image/index/banner2/琴.png') no-repeat;
+        background-size: 100% 260px; */
+        /* background: url('../image/index/banner2/克力.png') no-repeat; */
+        /* background-size: 100% 220%; */
+        /* background-position: -5vw -10vh; */
+        z-index: 10;
+        opacity: 1;
+        /* 应用的动画名 */
+        animation-name: b3-in;
+        /* 过程时间 */
+        animation-duration: 1s;
+        /* 可以在动画播放过程中实现先加速再减速的效果 */
+        animation-timing-function: ease-in-out;
+        /* 延迟0.5s */
+        /* animation-delay: 0.5s; */
+        /* 可以使动画在播放之前和之后保持其效果 */
+        animation-fill-mode: both;
+        /* 循环播放 */
+    }
+    /* ---2---- */
+    
+    #b4 {
+        width: 100%;
+        height: 260px;
+        position: relative;
+    }
+    
+    #b4 li {
+        border: 0
+    }
+    
+    #b4-2 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 260px;
+        background: url('../image/index/banner2/里约.jpg') no-repeat;
+        background-size: 100% 260px;
+        filter: brightness(50%);
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+    
+    #b4:hover #b4-2 {
+        border: 5px solid #ffffff;
+        filter: brightness(100%);
+        background-size: 105% 105%;
+        background-position: center center;
+    }
+    
+    #b4-1-2 {
+        opacity: 0;
+        transition: all 0.5s;
+        background-size: 95% 95%;
+        background-position: -15vw -0vh;
+    }
+    
+    @keyframes b4-in {
+        0% {
+            background: url('../image/ly/1.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: -20vw -10vh;
+        }
+        25% {
+            background: url('../image/ly/4.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: -15vw -10vh;
+        }
+        50% {
+            background: url('../image/ly/3.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: -10vw -10vh;
+        }
+        75% {
+            background: url('../image/ly/2.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: -5vw -10vh;
+        }
+        100% {
+            background: url('../image/index/banner2/xxx.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: 0vw -10vh;
+        }
+    }
+    
+    #b4:hover #b4-1-2 {
+        position: absolute;
+        width: 100%;
+        height: 260px;
+        top: 0;
+        left: 25vw;
+        /* background-size: 100% 220%; */
+        /* background-position: -5vw -10vh; */
+        z-index: 10;
+        opacity: 1;
+        /* 应用的动画名 */
+        animation-name: b4-in;
+        /* 过程时间 */
+        animation-duration: 1s;
+        /* 可以在动画播放过程中实现先加速再减速的效果 */
+        animation-timing-function: ease-in-out;
+        /* 延迟0.5s */
+        /* animation-delay: 0.5s; */
+        /* 可以使动画在播放之前和之后保持其效果 */
+        animation-fill-mode: both;
+    }
+    /* ------3--- */
+    
+    #b5 {
+        width: 100%;
+        height: 260px;
+        position: relative;
+    }
+    
+    #b5 li {
+        border: 0
+    }
+    
+    #b5-3 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 260px;
+        background: url('../image/index/banner2/到期.jpg') no-repeat;
+        background-size: 100% 260px;
+        filter: brightness(50%);
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+    
+    #b5:hover #b5-3 {
+        border: 5px solid #ffffff;
+        filter: brightness(100%);
+        background-size: 105% 105%;
+        background-position: center center;
+    }
+    
+    #b5-1-3 {
+        opacity: 0;
+        transition: all 0.5s;
+        background-size: 95% 95%;
+    }
+    
+    @keyframes b5-in {
+        0% {
+            background: url('../image/dq/1.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: -13vw -10vh;
+        }
+        25% {
+            background: url('../image/dq/2.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: -7vw -10vh;
+        }
+        50% {
+            background: url('../image/dq/3.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: -2vw -10vh;
+        }
+        75% {
+            background: url('../image/dq/4.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: 3vw -10vh;
+        }
+        100% {
+            background: url('../image/index/banner2/雷电将军.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: 8vw -10vh;
+        }
+    }
+    
+    #b5:hover #b5-1-3 {
+        position: absolute;
+        width: 100%;
+        height: 260px;
+        top: 0;
+        left: 30vw;
+        /* background: url('../image/index/banner2/神里零华.png') no-repeat;
+        background-size: 100% 260px; */
+        /* background: url('../image/index/banner2/雷电将军.png') no-repeat; */
+        /* background-size: 100% 220%; */
+        /* background-position: 8vw -10vh; */
+        z-index: 10;
+        opacity: 1;
+        /* 应用的动画名 */
+        animation-name: b5-in;
+        /* 过程时间 */
+        animation-duration: 1s;
+        /* 可以在动画播放过程中实现先加速再减速的效果 */
+        animation-timing-function: ease-in-out;
+        /* 延迟0.5s */
+        /* animation-delay: 0.5s; */
+        /* 可以使动画在播放之前和之后保持其效果 */
+        animation-fill-mode: both;
+    }
+    /*  #b5:hover #b5-1-3:hover {
+        background: url('../image/index/banner2/xxx.png') no-repeat;
+        background-size: 100% 220%;
+        background-position: -5vw -10vh;
+    } */
+    /* ------4--- */
+    
+    #b6 {
+        width: 100%;
+        height: 260px;
+        position: relative;
+    }
+    
+    #b6 li {
+        border: 0
+    }
+    
+    #b6-4 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 260px;
+        background: url('../image/index/banner2/须弥.jpg') no-repeat;
+        background-size: 100% 260px;
+        filter: brightness(50%);
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+    
+    #b6:hover #b6-4 {
+        border: 5px solid #ffffff;
+        filter: brightness(100%);
+        background-size: 105% 105%;
+        background-position: center center;
+    }
+    
+    #b6-1-4 {
+        opacity: 0;
+        transition: all 0.5s;
+        background-size: 95% 95%;
+        background-position: -10vw -0vh;
+    }
+    
+    @keyframes b6-in {
+        0% {
+            background: url('../image/xm/1.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: -18vw -10vh;
+        }
+        25% {
+            background: url('../image/xm/2.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: -13vw -10vh;
+        }
+        50% {
+            background: url('../image/xm/3.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: -8vw -10vh;
+        }
+        75% {
+            background: url('../image/xm/4.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: -3vw -10vh;
+        }
+        100% {
+            background: url('../image/index/banner2/尼露.png') no-repeat;
+            background-size: 100% 250%;
+            background-position: 2vw -10vh;
+        }
+    }
+    
+    #b6:hover #b6-1-4 {
+        position: absolute;
+        width: 100%;
+        height: 260px;
+        top: 0;
+        left: 30vw;
+        /* background: url('../image/index/banner2/尼露.png') no-repeat; */
+        /* background-size: 100% 200%; */
+        /* background-position: 2vw -10vh; */
+        z-index: 10;
+        opacity: 1;
+        /* 应用的动画名 */
+        animation-name: b6-in;
+        /* 过程时间 */
+        animation-duration: 1s;
+        /* 可以在动画播放过程中实现先加速再减速的效果 */
+        animation-timing-function: ease-in-out;
+        /* 延迟0.5s */
+        /* animation-delay: 0.5s; */
+        /* 可以使动画在播放之前和之后保持其效果 */
+        animation-fill-mode: both;
+    }
+    
+    #b7 {
+        width: 100%;
+        height: 230px;
+        background: url('../image/index/banner2/期待.jpg') no-repeat;
+        background-size: 100% 260px;
+        color: rgba(255, 255, 255, 0.3);
+    }
+    /* -------footer1------- */
+    
+    .footer1 {
+        width: 100%;
+        height: 52px;
+        background: #111111;
+    }
+    
+    .f1 {
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .f1 a {
+        margin: 0 10px;
+        opacity: 0.4;
+    }
+    
+    .f1 a:hover {
+        margin: 0 10px;
+        opacity: 1;
+    }
+    /* --------footer2-------- */
+    
+    .footer2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 343px;
+        background: #000000;
+    }
+    /* *-----------* */
+    
+    @media (max-width: 993px) {
+        .banner2 h3 {
+            width: 452px;
+            height: 331px;
+            text-align: center
+        }
+        .xp1 {
+            display: none;
+        }
+    }
+    
+    @media (max-width: 770px) {
+        .xp2 {
+            display: none;
+        }
+        .xp11 {
+            display: block;
+        }
+    }
+    
+    #dddddd {
+        left: 0;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: #00000065;
+        z-index: 999;
+        text-align: center;
+        display: none;
+    }
+    
+    #my-video {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        z-index: 9999;
+    }
+    /* -----ce-------- */
+    
+    .ce {
+        position: fixed;
+        right: -134px;
+        top: 30vh;
+        width: 134px;
+        height: 266px;
+        background: rgba(255, 255, 255, 0.9);
+        z-index: 9999;
+        transition: all 1s
+    }
+    
+    .ce ul {
+        width: 134px;
+        height: 132px;
+        padding: 0;
+    }
+    
+    .ce ul li {
+        margin: 0;
+        padding: 0;
+        width: 134px;
+        height: 44px;
+        text-align: center;
+        line-height: 44px;
+        list-style: none;
+    }
+    
+    .ce ul li:hover {
+        background: #333;
+        color: #ffd49f
+    }
+    
+    .you {
+        width: 30px;
+        height: 52px;
+        background: #333;
+        position: absolute;
+        top: 18px;
+        left: -30px;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 52px;
+    }
